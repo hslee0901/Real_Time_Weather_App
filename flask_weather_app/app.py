@@ -10,7 +10,7 @@ def index():
 
 @app.route('/weather', methods=['POST'])
 def weather():
-    apikey = "438c13480cc2c4820de888d5cff19a6c"
+    apikey = "API 키 입력 / API KEY 入力"
     city = request.form['city']
     lang = "ja"
     
