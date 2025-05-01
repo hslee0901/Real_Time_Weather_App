@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>天気情報</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Klee+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f10167bfad.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <h1>JDXサークルのPython WEBアプリ開発練習ページ</h1>
+    </header>
+
+    <div class="main">
+        <div class="hello">
+            <h1>現在、天気情報を教えてくれるプログラムです。</h1>
+        </div>
+    <div class="mf">
+        <form action="/weather" method="post" class="weather-form">
+            <label for="city">都市名をご入力してください(英語): </label>
+            <input type="text" id="city" name="city" placeholder="EX) Osaka">
+            <button type="submit">天気を確認</button>
+        </form>
+    </div>
+    </div>
+    <footer>
+        <p class="foot-p">イヒョンソン</p>
+    </footer>
+    {% if error %}
+    <p style="color: red;">{{ error }}</p>
+    {% endif %}
+</body>
+
+</html>

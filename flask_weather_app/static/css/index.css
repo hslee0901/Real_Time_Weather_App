@@ -1,0 +1,118 @@
+/* 공통 스타일 */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #01579b;
+    background-color: #e0f7fa;
+}
+header {
+    background-color: #e0f7fa;
+    border: solid 2.3px #0288d1; 
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 115px;
+}
+
+
+header h1 {
+    top: 0;
+
+    font-size: 2.5rem; /* Adjusted for consistency */
+    text-align: center;
+
+}
+
+/* .hello div 스타일 */
+
+
+/* .index-form div 스타일 */
+.main {
+    flex: 1;
+    margin-top: 115px; /* Adjust based on header height */
+}
+
+.hello {
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    margin-top: 170px;
+}
+.hello h1{
+    font-size: 35px;
+
+}
+
+.weather-form {
+    background-color: #78cdf5; /* 밝은 하늘색 배경 */
+    padding: 40px;
+    border-radius: 60px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* 부드러운 그림자 효과 */
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+.weather-form label {
+    font-size: 24px;
+    color: #ffffff; 
+    display: block;
+    margin-bottom: 10px;
+}
+
+.weather-form input[type="text"] {
+    width: 40%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #0288d1;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.weather-form input[type="text"]:focus {
+    border-color: #0277bd;
+}
+
+.weather-form button {
+    background-color: #0288d1;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.weather-form button:hover {
+    background-color: #0277bd;
+}
+footer {
+    background-color: #e0f7fa;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border: solid 2.3px #0288d1; 
+
+}
+
+footer p {
+    color: #01579b;
+    bottom: 0;
+}
+
+/* 에러 메시지 스타일 */
+p {
+    color: red;
+    text-align: center;
+}

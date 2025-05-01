@@ -1,0 +1,175 @@
+/* 공통 스타일 */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #01579b;
+    background-color: #e0f7fa;
+}
+header {
+    background-color: #e0f7fa;
+    border: solid 2.3px #0288d1; 
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 115px;
+}
+
+
+header h1 {
+    top: 0;
+
+    font-size: 2.5rem; /* Adjusted for consistency */
+    text-align: center;
+
+}
+
+/* .hello div 스타일 */
+
+
+/* .index-form div 스타일 */
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    flex: 1;
+    margin-top: 115px;
+}
+
+.info {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid rgb(27, 18, 109);;
+    background-color: rgb(140, 161, 252);
+}
+
+.name {
+    width: 1000px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-size: 23px;
+    color: rgb(27, 18, 109);
+    border-bottom: 3px solid rgb(27, 18, 109);
+}
+.name h1{
+    padding: 0;
+}
+
+.info-con {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: rgb(27, 18, 109);
+}
+
+.img {
+    flex: 1;
+    text-align: left;
+}
+
+.img img {
+    width: 430px;
+    height: 433px;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 3px;
+}
+
+.info-con2 {
+    flex: 3;
+    text-align: left;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 50px;
+    border-left: solid 3px rgb(27, 18, 109);
+
+}
+.info-con2 p{
+    font-size: 20px;
+}
+.info-con3 {
+    flex: 3;
+    text-align: left;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-left: solid 3px rgb(27, 18, 109);
+}
+.info-con3 p{
+    font-size: 20px;
+}
+.specialm {
+    text-align: center;
+
+    font-size: 30px;
+    color: rgb(27, 18, 109);
+    border-top: solid 3px rgb(27, 18, 109);
+    width: 1000px;
+}
+
+
+
+footer {
+    background-color: #e0f7fa;
+    text-align: center;
+    width: 100%;
+    border: solid 2.3px #0288d1; 
+
+}
+
+footer p {
+    color: #01579b;
+    bottom: 0;
+}
+
+.info{
+    display: flex;
+    font-size: 15px;
+}
+
+
+
+
+
+/* btn */
+.main-a {
+    margin-bottom: 40px;
+}
+.main a{
+    font-size: 30px;
+
+}
+.home-link {
+    color: rgb(27, 18, 109);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.home-link:hover {
+    color: rgb(12, 218, 166);
+}
+
+.home-link i {
+    margin-right: 3px;
+    transition: color 0.3s ease;
+    color: rgb(27, 18, 109);
+}
+
+.home-link:hover i {
+    color: rgb(12, 218, 166);
+}
+/* btn */

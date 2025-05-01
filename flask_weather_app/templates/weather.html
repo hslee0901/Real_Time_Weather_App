@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>天気情報</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/weather.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Klee+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f10167bfad.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <h1>JDXサークルのPython WEBアプリ開発練習ページ</h1>
+    </header>
+    <div class="main">
+
+        <div class="info">
+            <div class="name">
+                <h1>{{ weather.city }}の天気予報です</h1>
+            </div>
+            <div class="info-con">
+            <div class="img">
+                <img src="{{ weather.image_url }}" alt="{{ weather.description }}" >
+            </div>
+            <div class="info-con2">
+                <p>天気は {{ weather.description }}です。</p>
+                <p>現在、温度は {{ weather.temperature }}℃です。</p>
+                <p>体感温度は {{ weather.feels_like }}℃です。</p>
+                <p>最低気温は {{ weather.temp_min }}℃です。</p>
+                <p>最高気温は {{ weather.temp_max }}℃です。</p>
+            </div>
+            <div class="info-con3">
+        
+             <p>湿度は {{ weather.humidity }}%です。</p>
+             <p>気圧は {{ weather.pressure }}hPaです。</p>
+             <p>風向は {{ weather.wind_deg }}˚です。</p>
+             <p>風速は {{ weather.wind_speed }}m/sです。</p>
+            </div>
+        </div>
+            <div class="specialm">
+                {% if weather.temperature > 33 %}
+                <p style="color: red;">熱中症注意報</p>
+                {% elif weather.temperature <= -3 %} <p style="color: blue;">寒波注意報</p>
+                    {% else %}
+                    <p>良い日をお過ごしください！</p>
+                    {% endif %}
+            </div>
+           
+        </div>
+        <div class="main-a">
+            <a href="{{ url_for('index') }}" class="home-link">
+                <i class="fa-solid fa-house"></i> Home
+            </a>
+        </div>
+    </div>
+    <footer>
+        <p class="foot-p">イヒョンソン</p>
+    </footer>
+</body>
+
+</html>
