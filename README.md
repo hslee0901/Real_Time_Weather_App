@@ -1,3 +1,5 @@
+Notion: https://www.notion.so/1e7d49c4500681b1b95bcde4572786a8
+
 OpenWeather APIを用いた天気情報アプリ
 
 特定の都市名（英語）を入力すると、現在の天気情報を取得できるアプリです。
